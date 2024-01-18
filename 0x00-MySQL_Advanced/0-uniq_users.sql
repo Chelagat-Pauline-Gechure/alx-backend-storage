@@ -1,6 +1,7 @@
--- SQL script that creates a table 'users' with attributes: id, email, name
+-- A SQL script that creates a table (called users) with following fields
+-- id, email, name
 CREATE TABLE IF NOT EXISTS users (
-	id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-	email VARCHAR(255) UNIQUE NOT NULL,
-	name VARCHAR(255)
+	id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	email varchar(255) NOT NULL UNIQUE,
+	name varchar(255)
 )
